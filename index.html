@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Raju Contractor | Painting & Putty Work Dobhi</title>
+  <meta name="description" content="Raju Contractor - Dobhi City ke ghar aur flat me Painting & Putty work expert. Contact: 9661139673" />
+  <meta name="author" content="Raju Contractor" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#1f6feb;
+      --accent-2:#0ea5e9;
+      --muted:#6b7280;
+      --bg:#f7fbff;
+      --card:#ffffff;
+      font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;
+      color-scheme: light;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#ffffff);color:#0f172a;line-height:1.5}
+    .container{max-width:1100px;margin:0 auto;padding:22px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:18px}
+    nav a{margin-left:14px;text-decoration:none;color:var(--muted);font-weight:600}
+    nav a.cta{background:var(--accent);color:#fff;padding:8px 14px;border-radius:10px}
+
+    /* Hero */
+    .hero-wrap{border-radius:16px;overflow:hidden;box-shadow:0 12px 40px rgba(2,6,23,0.08);display:grid;grid-template-columns:1fr 420px;gap:26px;align-items:stretch}
+    .hero-left{padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.9));display:flex;flex-direction:column;justify-content:center}
+    .eyebrow{color:var(--accent);font-weight:700;font-size:13px;letter-spacing:0.6px}
+    h1{font-size:28px;margin:8px 0 6px 0}
+    p.lead{color:var(--muted);margin:0 0 12px 0}
+    .cta-row{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
+    .btn{background:var(--accent);color:#fff;padding:12px 16px;border-radius:10px;border:0;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+    .btn.alt{background:transparent;color:var(--accent);border:1px solid rgba(31,111,235,0.12)}
+    .quick-stats{display:flex;gap:12px;margin-top:16px}
+    .stat{background:rgba(15,23,42,0.03);padding:10px 12px;border-radius:10px;text-align:center}
+
+    .hero-right{min-height:320px;background-size:cover;background-position:center;display:block}
+
+    /* Sections */
+    section{margin-top:24px}
+    h2{margin:0 0 10px 0}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    .service{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 8px 26px rgba(15,23,42,0.04)}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+    .media{position:relative;border-radius:10px;overflow:hidden;cursor:pointer;box-shadow:0 8px 20px rgba(2,6,23,0.04)}
+    .media img{width:100%;height:180px;object-fit:cover;display:block}
+    .media .label{position:absolute;left:10px;bottom:10px;background:rgba(0,0,0,0.45);color:white;padding:6px 8px;border-radius:8px;font-size:13px}
+
+    .about-contact{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:12px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 26px rgba(15,23,42,0.04)}
+    .contact .info{display:flex;flex-direction:column;gap:8px}
+    .contact .info a{color:var(--accent);text-decoration:none;font-weight:700}
+    form label{display:block;font-size:13px;color:var(--muted);margin-top:8px}
+    input, textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eefc;margin-top:6px}
+    button{margin-top:12px;background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;border:0;font-weight:700}
+
+    footer{margin:26px 0;text-align:center;color:var(--muted);font-size:14px}
+
+    /* Modal */
+    .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,23,0.6);z-index:999}
+    .modal.open{display:flex}
+    .modal .box{max-width:900px;width:94%;background:#000;border-radius:10px;overflow:hidden;position:relative}
+    .modal img{width:100%;height:auto;display:block}
+    .close-btn{position:absolute;right:12px;top:12px;background:rgba(255,255,255,0.1);border-radius:8px;padding:6px;color:white;border:0}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero-wrap{grid-template-columns:1fr}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .services{grid-template-columns:repeat(2,1fr)}
+      .about-contact{grid-template-columns:1fr}
+    }
+    @media (max-width:560px){
+      nav a{display:none}
+      .hero-right{min-height:220px}
+      .media img{height:140px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">RC</div>
+        <div>
+          <div style="font-weight:800">Raju Contractor</div>
+          <div style="font-size:13px;color:var(--muted)">Painting & Putty • Dobhi City</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#gallery">Our Work</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero-wrap">
+      <div class="hero-left">
+        <div class="eyebrow">Trusted Local Contractor</div>
+        <h1>Raju Contractor — Painting & Putty Work in Dobhi</h1>
+        <p class="lead">Ghar aur flat ke interior & exterior painting, surface repair aur smooth putty finish. Quality materials aur timely delivery.</p>
+
+        <div class="cta-row">
+          <a class="btn" href="tel:+919661139673">Call Now: 9661139673</a>
+          <a class="btn alt" href="https://wa.me/919661139673" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+
+        <div class="quick-stats" aria-hidden="true">
+          <div class="stat"><div style="font-weight:700">+700</div><div style="font-size:13px;color:var(--muted)">Projects</div></div>
+          <div class="stat"><div style="font-weight:700">10+</div><div style="font-size:13px;color:var(--muted)">Years Experience</div></div>
+          <div class="stat"><div style="font-weight:700">4.9/5</div><div style="font-size:13px;color:var(--muted)">Customer Rating</div></div>
+        </div>
+      </div>
+
+      <!-- HERO RIGHT: BACKGROUND IMAGE -->
+      <div class="hero-right" style="background-image:url('images/hero.jpg');"></div>
+    </div>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <h2>Services</h2>
+      <div class="services" aria-hidden="false">
+        <div class="service card">
+          <h4 style="margin:0">Interior Painting</h4>
+          <p style="color:var(--muted);margin-top:8px">Wall prep, primer, 2-3 coats with neat edges & finishing.</p>
+        </div>
+        <div class="service card">
+          <h4 style="margin:0">Exterior Painting</h4>
+          <p style="color:var(--muted);margin-top:8px">Weather-resistant paints aur durable finish for exteriors.</p>
+        </div>
+        <div class="service card">
+          <h4 style="margin:0">Putty & Surface Repair</h4>
+          <p style="color:var(--muted);margin-top:8px">Crack filling, surface smoothing aur perfect base coat.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <h2>Our Work</h2>
+      <p style="color:var(--muted);margin-top:6px">Click any photo to view larger.</p>
+      <div class="gallery">
+        <div class="media" data-type="image" data-src="images/gallery1.jpg"><img src="images/gallery1.jpg" alt="Project 1"><div class="label">Living Room Finish</div></div>
+        <div class="media" data-type="image" data-src="images/gallery2.jpg"><img src="images/gallery2.jpg" alt="Project 2"><div class="label">Bedroom Paint</div></div>
+        <div class="media" data-type="image" data-src="images/gallery3.jpg"><img src="images/gallery3.jpg" alt="Project 3"><div class="label">Exterior Work</div></div>
+        <div class="media" data-type="image" data-src="images/gallery4.jpg"><img src="images/gallery4.jpg" alt="Project 4"><div class="label">Detail Finish</div></div>
+      </div>
+    </section>
+
+    <!-- ABOUT + CONTACT -->
+    <section class="about-contact">
+      <div>
+        <div class="card">
+          <h3 style="margin-top:0">About Raju Contractor</h3>
+          <p style="color:var(--muted)">Raju Contractor - Dobhi City ke ghar aur flat me Painting & Putty work expert. Hum quality materials (branded paints), skilled team aur timely completion par dhyan dete hain. Free site visit aur transparent quotation available.</p>
+          <ul style="color:var(--muted);padding-left:18px">
+            <li>Free site visit & quotation</li>
+            <li>Transparent pricing</li>
+            <li>Post-work inspection</li>
+          </ul>
+        </div>
+
+        <div style="margin-top:14px" class="card">
+          <h4 style="margin:0">Customer Reviews</h4>
+          <p style="color:var(--muted);margin-top:8px"><strong>Ram Kumar:</strong> "Bahut achha kaam — timely and neat!"</p>
+          <p style="color:var(--muted)"><strong>Sita Sharma:</strong> "Excellent finishing and helpful color guidance."</p>
+        </div>
+      </div>
+
+      <div id="contact" class="card contact">
+        <h3 style="margin-top:0">Get a Free Quote</h3>
+        <div class="info" style="margin-bottom:10px">
+          <div>Phone: <a href="tel:+919661139673">9661139673</a></div>
+          <div>Email: <a href="mailto:itstec249@gmail.com">itstec249@gmail.com</a></div>
+          <div>Location: Dobhi City</div>
+        </div>
+
+        <form onsubmit="event.preventDefault(); sendMail();">
+          <label for="name">Naam</label>
+          <input id="name" required placeholder="Aapka naam">
+          <label for="phone">Phone/WhatsApp</label>
+          <input id="phone" required placeholder="Phone number">
+          <label for="message">Project details</label>
+          <textarea id="message" rows="4" placeholder="Kitne kamre, expected timeline, etc."></textarea>
+          <button type="submit">Send Request</button>
+        </form>
+
+        <p style="color:var(--muted);font-size:13px;margin-top:10px">Or directly <a href="https://wa.me/919661139673" target="_blank" rel="noopener">WhatsApp</a> or call.</p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Raju Contractor • All rights reserved
+    </footer>
+  </div>
+
+  <!-- Modal for viewing images -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true">
+    <div class="box">
+      <button class="close-btn" onclick="closeModal()">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Gallery modal logic
+    document.querySelectorAll('.media').forEach(item=>{
+      item.addEventListener('click',()=>{
+        const src = item.getAttribute('data-src');
+        openModal(src);
+      });
+    });
+
+    function openModal(src){
+      const modal = document.getElementById('modal');
+      const content = document.getElementById('modalContent');
+      content.innerHTML = '';
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = 'Image';
+      content.appendChild(img);
+      modal.classList.add('open');
+    }
+    function closeModal(){
+      const modal = document.getElementById('modal');
+      modal.classList.remove('open');
+      const content = document.getElementById('modalContent');
+      content.innerHTML = '';
+    }
+
+    // Simple mailto form submit
+    function sendMail(){
+      const name = encodeURIComponent(document.getElementById('name').value || 'N/A');
+      const phone = encodeURIComponent(document.getElementById('phone').value || 'N/A');
+      const message = encodeURIComponent(document.getElementById('message').value || 'N/A');
+      const subject = encodeURIComponent('Painting Quote Request - ' + name);
+      const body = encodeURIComponent('Name: '+decodeURIComponent(name)+'\\nPhone: '+decodeURIComponent(phone)+'\\nMessage: '+decodeURIComponent(message));
+      window.location.href = 'mailto:itstec249@gmail.com?subject='+subject+'&body='+body;
+    }
+  </script>
+</body>
+</html>
